@@ -8,6 +8,8 @@
    <!-- daisyUi and tailwind cdn -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
+   <!-- font awesome icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- google font link  -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,10 @@
           extend: {
             colors: {
               clifford: '#da373d',
-            }
+            },
+            // backgroundImage: {
+            //    'gradient': 'bg-gradient-to-r from-#F00 to-#FF8938',
+            // }
           }
         }
       }
@@ -33,14 +38,26 @@
 <body class="font-manrope">
    <header>
       <!-- banner section -->
-      <div class="flex">
-         <div class="content">
-            <h1 class="text-7xl font-bold text-[#1C1C1C]">It's good <br> tea time at The <br> Tea House</h1>
-            <p class="font-medium text-xl text-[#777]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-            <button class="btn">Explore More</button>
+      <div class="flex max-w-7xl gap-8 md:gap-12 mx-auto items-center p-3 md:pt-14 flex-col md:flex-row">
+         <div class="flex-1 space-y-6">
+            <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold text-[#1C1C1C]">It's good <br> tea time at The <br> Tea House</h1>
+            <p class="font-medium text-sm md:text-xl text-[#777]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary bg-[bg-gradient-to-r from-#F00 to-#FF8938]">
+               Explore More
+               <img src="./images/up-right-arrow.png" class="w-4">
+            </button>
          </div>
-         <div class="banner-img">
-
+         <div class="banner-img flex-1 relative">
+            <img src="./images/banner.png" class="w-full xl:lg:w-3/4 z-0 md:ml-auto">
+            <div class="flex items-center gap-4 left-10 lg:left-20 rounded-lg shadow-lg lg:w-60 bg-white p-5 absolute bottom-2 lg:bottom-5 z-10">
+               <div>
+                  <i class="fa-solid fa-star" style="color: #e1f92f;"></i>
+               </div>
+               <div>
+                  <p>5.00</p>
+                  <p>Trust Pilot Ratings</p>
+               </div>
+            </div>
          </div>
       </div>
    </header>
